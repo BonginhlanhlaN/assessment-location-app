@@ -47,7 +47,7 @@ class  SearchBar extends React.Component{
 
                 </form>
                 
-                <button onClick = {this.handleUseCurrentLocation} >Current Location</button>
+                <button onClick = {this.handleUseCurrentLocation} >My Location</button>
                 
             </div>
 

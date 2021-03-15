@@ -7,3 +7,17 @@
     margin-bottom: 5px;
 
 }
+
+.local-item:active{
+
+    background-color: lightgray;
+
+}
+
+h4{
+    color: gray;
+}
+
+h5{
+    color: lightgray;
+}

@@ -1,14 +1,13 @@
 .App-header {
 
-    
-    min-height: 75px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    font-size: calc(10px + 2vmin);
+    font-size: 1rem;
     color: #E3242B;
     border-bottom:1px solid #E3242B;
+    padding: 1rem 2rem; 
 
   }
 

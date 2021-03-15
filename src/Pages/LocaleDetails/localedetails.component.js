@@ -54,11 +54,12 @@ class LocaleDetails extends React.Component{
 
         
         const venuePhotoz = this.state.venuePhotos;
-        
+        const venueName = this.props.match.params.venue_name;
         const showVenueImages = (venuePhotoz)? (
             
-            <div className = "venue-images-container">{ venuePhotoz.map((venuePhoto) => 
-                ( <div key = {venuePhoto.id}> 
+            <div className = "venue-images-container">{ 
+                
+                venuePhotoz.map((venuePhoto) => ( <div key = {venuePhoto.id}> 
 
                     <Link to = {'/imagedetails/' + venuePhoto.id}>
                         <div className = "venue-image-container">
@@ -71,7 +72,15 @@ class LocaleDetails extends React.Component{
 
         return(
 
-            <div>{showVenueImages}</div>
+            <div>
+                {
+                    <React.Fragment>
+                        <h2>Venue Pictures for {venueName}</h2>
+                        {showVenueImages}
+                    </React.Fragment>
+                    
+                }
+            </div>
 
         );  
 

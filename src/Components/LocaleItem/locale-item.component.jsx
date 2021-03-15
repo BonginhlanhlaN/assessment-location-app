@@ -18,9 +18,9 @@ function LocaleItem(props){
                 <Link to = {"/locationimages/" + props.location.venue.name + "/" + props.location.venue.id}>
                     <div className = "local-item">
                         
-                        <h4>{props.location.venue.name}</h4>
+                        <h2>{props.location.venue.name}</h2>
                         <h4>{props.location.venue.location.address}</h4>
-                        <h4>{props.location.venue.categories[0].name}</h4>
+                        <h5>{props.location.venue.categories[0].name}</h5>
                         
                     </div>
 

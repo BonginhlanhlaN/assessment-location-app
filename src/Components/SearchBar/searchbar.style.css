@@ -1,15 +1,23 @@
 .search-container{
 
     margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 
+}
+
+form{
+    margin-right: 10px;
 }
 
 input[type=text]{
 
     width: 160px;
-    height: 30px;
-    margin: 10px;
+    height: 35px;
     border: 1px solid #E3242B;
+    padding: 0rem 0.5rem;
 
 }
 
@@ -17,20 +25,29 @@ input[type=submit]{
 
     border: none;
     width: 60px;
-    height: 30px;
+    height: 35px;
     background-color: #E3242B;
     color: white;
     font-weight: 600;
 
 }
 
+input[type=submit]:active {
+    background-color: yellow;
+}
+
 button{
 
-    width: 215px;
     height: 35px;
     border: none;
     background-color: #E3242B;
     color: white;
     font-weight: 700;
 
+}
+
+button:active{
+
+    background-color: yellow;
+    
 }

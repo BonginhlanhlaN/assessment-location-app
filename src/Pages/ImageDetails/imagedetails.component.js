@@ -53,12 +53,14 @@ class ImageDetails extends React.Component{
 
             }
 
-            if(!savedVenues.includes(favouritVenue)){
+            
+            if(!this.isVenueAlreadySaved(savedVenues , favouritVenue)){
                 
                 savedVenues.push(favouritVenue);
                 sessionStorage.setItem('savedVenues', JSON.stringify(savedVenues));
 
             }
+            
             
         }else{
            
@@ -78,6 +80,25 @@ class ImageDetails extends React.Component{
             sessionStorage.setItem('savedVenues', JSON.stringify(savedVenues));
         
         }
+
+    }
+
+    isVenueAlreadySaved(savedVenues , savedVenue){
+
+        var isAlreadySaved = false;
+
+        for(var i = 0; i < savedVenues.length; i++){
+
+            if(savedVenues[i].id === savedVenue.id){
+
+                isAlreadySaved = true;
+                break;
+            
+            }
+
+        }
+
+        return isAlreadySaved;
 
     }
 
