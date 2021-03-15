@@ -1,0 +1,24 @@
+.App-header {
+
+    
+    min-height: 75px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: #E3242B;
+    border-bottom:1px solid #E3242B;
+
+  }
+
+  .App-header h3{
+
+    margin-right: auto;
+
+  }
+
+  a{
+      text-decoration: none;
+      color:#E3242B;
+  }

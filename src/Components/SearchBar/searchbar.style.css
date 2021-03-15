@@ -1,0 +1,36 @@
+.search-container{
+
+    margin-top: 15px;
+
+}
+
+input[type=text]{
+
+    width: 160px;
+    height: 30px;
+    margin: 10px;
+    border: 1px solid #E3242B;
+
+}
+
+input[type=submit]{
+
+    border: none;
+    width: 60px;
+    height: 30px;
+    background-color: #E3242B;
+    color: white;
+    font-weight: 600;
+
+}
+
+button{
+
+    width: 215px;
+    height: 35px;
+    border: none;
+    background-color: #E3242B;
+    color: white;
+    font-weight: 700;
+
+}
